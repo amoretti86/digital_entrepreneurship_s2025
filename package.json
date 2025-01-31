@@ -1,0 +1,16 @@
+{
+    "name": "registration-app",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+      "start": "cd server && npm start",
+      "heroku-postbuild": "cd client && npm install && npm run build",
+      "dev": "concurrently \"cd server && npm run dev\" \"cd client && npm start\""
+    },
+    "engines": {
+      "node": "18.x"
+    },
+    "dependencies": {
+      "concurrently": "^8.2.0"
+    }
+  }
