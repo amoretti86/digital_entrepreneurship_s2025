@@ -16,8 +16,6 @@ initDb();
 
 
 
-// Existing code (cors, express.json(), etc)...
-
 // Serve static files from the React build
 app.use(express.static(path.join(__dirname, '../client/build')));
 
